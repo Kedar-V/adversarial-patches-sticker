@@ -1,0 +1,10 @@
+.venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.DS_Store
+saved_models/tutorial10/hub/
+saved_models/tutorial10/physical_exports/
+data/TinyImageNet/
+*.pth
+.torch/

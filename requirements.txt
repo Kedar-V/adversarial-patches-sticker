@@ -1,0 +1,12 @@
+torch>=2.0
+torchvision>=0.15
+pytorch-lightning>=1.4
+matplotlib
+seaborn
+numpy
+scipy
+tqdm
+Pillow
+tabulate
+ipykernel
+jupyter
