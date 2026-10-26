@@ -29,11 +29,11 @@ jupyter notebook adversarial_attacks_patches.ipynb
 
 Upload this repo (including `stickers/porsche_gt3rs_sticker.jpg`) to Colab, then run the section **Train for the physical world (EOT) — Porsche sticker patch**:
 - initializes from the Porsche artwork (circular crop + mask)
-- EOT: random scale, rotation, brightness/contrast, blur, noise
+- EOT: random scale, rotation (±45°), horizontal/vertical flips, brightness/contrast, blur, noise
 - content loss keeps it looking like the sticker while becoming adversarial
 - exports a printable PNG under `saved_models/tutorial10/physical_exports/`
 
-Tunables in the demo cell: `PHYS_CLASS`, `CONTENT_WEIGHT` (look vs attack strength), `PHYS_EPOCHS`.
+Tunables in the demo cell: `PHYS_CLASS`, `PHYS_SIZE` (default **1024** for print), `CONTENT_WEIGHT` (look vs attack strength), `PHYS_EPOCHS`, `BATCH_SIZE`.
 
 ## License / data
 
