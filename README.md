@@ -23,16 +23,17 @@ pip install -r requirements.txt
 jupyter notebook adversarial_attacks_patches.ipynb
 ```
 
-GPU recommended; Apple MPS / CPU also work (slower).
+**Recommended:** Google Colab with a **T4 GPU**. Apple MPS / CPU also work (slower).
 
 ## Physical sticker training
 
-The notebook section **Train for the physical world (EOT)** adds:
-- random scale, rotation, brightness/contrast, blur, noise
-- total-variation regularizer for printability
-- export of a printable PNG under `saved_models/tutorial10/physical_exports/`
+Upload this repo (including `stickers/porsche_gt3rs_sticker.jpg`) to Colab, then run the section **Train for the physical world (EOT) — Porsche sticker patch**:
+- initializes from the Porsche artwork (circular crop + mask)
+- EOT: random scale, rotation, brightness/contrast, blur, noise
+- content loss keeps it looking like the sticker while becoming adversarial
+- exports a printable PNG under `saved_models/tutorial10/physical_exports/`
 
-Your Porsche sticker lives in `stickers/` for natural-looking constrained patch experiments.
+Tunables in the demo cell: `PHYS_CLASS`, `CONTENT_WEIGHT` (look vs attack strength), `PHYS_EPOCHS`.
 
 ## License / data
 
